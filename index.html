@@ -6,51 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        const password = document.querySelector('.confirm');
+
+        password.addEventListener('')
+    </script>
 </head>
 <body>
     <div class="left-panel">
         <div class="odinheader">
-            <img src="images/odin.png" alt="odin icon" width="50px">
+            <img src="images/odin.png" alt="odin icon">
             <h1 class="odin">Odin</h1>
         </div>
-        <footer>Photo by <a href="https://unsplash.com/@iangvalerio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ian Valerio</a> on <a href="https://unsplash.com/s/photos/anime?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        <footer class="imagecredit">Photo by <a href="https://unsplash.com/@iangvalerio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ian Valerio</a> on <a href="https://unsplash.com/s/photos/anime?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         </footer>
     </div>
-
-    <div class="form-header">
-        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</p>
-        <p>You <em>know</em> you want to.</p>
-    </div>
-
-    <form action="" method="put">
-        <fieldset>
-        <title>Let's do this!</title>
-
-        <label for="first-name">FIRST NAME</label>
-        <input type="text" name="first-name" id="first-name">
-
-        <label for="last-name">LAST NAME</label>
-        <input type="text" name="last-name" id="last-name">
-
-        <label for="email">EMAIL</label>
-        <input type="mail" name="email" id="email">
-
-        <label for="phone">PHONE NUMBER</label>
-        <input type="number" name="phone" id="phone">
-
-        <label for="password">PASSWORD</label>
-        <input type="text" name="password" id="password">
-
-        <label for="password-conf">CONFIRM PASSWORD</label>
-        <input type="text" name="password-conf" id="password-conf">
-        
-        </fieldset>
-
-        <button>Create Account</button>
-
-        <div class="login">
-            Already have an account? <a href="login">Log in</a> 
+    <div class="right-panel">
+        <div class="right-header">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</p>
+            <p>You <em>know</em> you want to.</p>
         </div>
-    </form>
+
+        <form action="" method="put">
+            <fieldset class="form-fields">
+                <div class="form-header">Let's do this!</div>
+                <div class="form-body">
+                    <div class="input">
+                        <label for="first-name"><span>FIRST NAME</span></label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="input">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                    <div class="input">
+                        <label for="email">EMAIL</label>
+                        <input type="mail" name="email" id="email" >
+                    </div>
+                    <div class="input">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone" >
+                    </div>
+                    <div class="input">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" required class="error">
+                    </div>
+                    <div class="input">
+                        <label for="password-conf">CONFIRM PASSWORD</label>
+                        <input type="password" name="password-conf" id="password-conf" required class="error confirm">
+                    </div>
+                </div>
+            </fieldset>
+
+            <button class="submit">Create Account</button>
+
+            <div class="login">
+                Already have an account? <a href="login.com">Log in</a> 
+            </div>
+        </form>
+    </div>
 </body>
-</html>
+</html> 
