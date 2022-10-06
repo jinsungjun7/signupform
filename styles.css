@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("fonts/Norse-Bold.otf") format("opentype");
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    display:flex;
+}
+
+.odinheader .odin{
+    font-family: "Norse-Bold";
+}
+
